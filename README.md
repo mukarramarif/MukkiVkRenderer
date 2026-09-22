@@ -137,15 +137,15 @@ cd build-debug
 - [x] Jolt physics (rigid bodies + vehicles)
 - [ ] looking into SIMD
 - [ ] multithreading for rendering and resource loading
-	- [x] std::async for model loading	
-
+	- [x] std::async for model loading
+ 	- [ ] subcommandbuffers? 
 ## Fixes
 - [x] recreating swapchain on window resize
 - [x] validation layers errors when switching from compute to graphics and back
 - [x] Abstract Vulkan calls to a draw function that we pass the scene path too.
-- [ ] RAII cleanup (tech depth)
+- [x] RAII cleanup (tech depth)
 	- [x] adding unique_ptrs to member variables in VkApplication
- 	- [ ] fixing dangling ptrs in code after switching scenes
+ 	- [x] fixing dangling ptrs in code after switching scenes
 
 ## Architecture Diagram
 ```mermaid
